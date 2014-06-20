@@ -1,0 +1,145 @@
+@import  "normalize.less";
+@import "glyphicons.less";
+@import "mixin.less";
+@import "keyframe.less";
+
+* {
+  box-sizing:border-box;
+  -moz-box-sizing:border-box; /* Firefox */
+  -webkit-box-sizing:border-box; /* Safari */
+}
+
+ul,ol,li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+}
+
+a, img {
+    -webkit-touch-callout: none; /* 禁止长按链接与图片弹出菜单 */
+}
+html, body {
+    -webkit-user-select: none;   /* 禁止选中文本（如无文本选中需求，此为必选项） */
+    user-select: none;
+}
+
+.slideUp {
+  transform: translate3d(0, -2000px, 0);
+  transition: transform 2s;
+  -webkit-transform: translate3d(0, -2000px, 0);
+  -webkit-transition: -webkit-transform 2s;
+}
+
+.welcome {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../images/welcomebg_640x960.png) no-repeat 50% 50%;
+  background-size: 100% 100%;
+  z-index: 2000;
+  text-align: center;
+  color: #FFF;
+  .mask {
+    width: 100%;
+    height: 100%;
+    background: url(../images/mask_2x2.png) repeat left top;
+  }
+  .circle-label {
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    line-height: 145px;
+    border-radius: 75px;
+    border: 5px solid rgba(251,251,251, 0.3);
+    font-size: 48px;
+    font-weight: bold;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    margin-left: -75px;
+    background-clip:content-box;
+    opacity: 0;
+    &.circle-label-1 {
+      background-color: rgba(130,91,169, 0.88);
+      .animation(fadeOut, 5s, linear, 0s, 1, normal, running, forwards);
+    }
+    &.circle-label-2 {
+      background-color: rgba(109,165,64, 0.88);
+      .animation(fadeInAndOut, 10s, linear, 2.5s, 1, normal, running, forwards);
+    }
+    &.circle-label-3{
+      background-color: rgba(241,141,48, 0.88);
+      .animation(fadeInAndOut, 10s, linear,10s, 1, normal, running, forwards);
+    }
+    &.circle-label-4{
+      background-color: rgba(89,132,210, 0.88);
+      .animation(fadeIn, 5s, linear,17.5s, 1, normal, running, forwards);
+    }
+  }
+  p {
+    position: absolute;
+    width: 100%;
+    top: 70%;
+    font-size: 18px;
+  }
+}
+
+.nav {
+  height: 50px;
+  line-height: 50px;
+  background: #4d4159; 
+  position: relative;
+  .menu,
+  .phone,
+  .address {
+    position: absolute;
+    height: 50px;
+    line-height: 55px;
+    color: #f5f1f9;
+    top: 0;
+    font-size: 24px;
+  }
+  .menu {
+    left: 10px;
+  }
+  .phone {
+    right: 10px;
+  }
+  .address {
+    right: 50px;
+  }
+  h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 18px;
+    color: #f5f0f9;
+  }
+  .color-border {
+    position: absolute;
+    bottom: -3px;
+    width: 100%;
+    height: 3px;
+    li {
+      float: left;
+      width: 25%;
+      height: 100%;
+      &.color-1 {
+        background-color: #f23f6c;
+      }
+      &.color-2 {
+        background-color: #f39031;
+      }
+      &.color-3 {
+        background-color: #6fa841;
+      }
+      &.color-4 {
+        background-color: #5b87d3;
+      }
+    }
+  }
+}

@@ -1,0 +1,67 @@
+.animation(@name, @duration, @timing-function:"ease", @delay:0, @iteration-count:1, @direction: 'normal', @play-state: "running", @fill-mode: 'none') {
+  animation-name: @name;
+  animation-duration: @duration;
+  animation-timing-function: @timing-function;
+  animation-delay: @delay;
+  animation-iteration-count: @iteration-count;
+  animation-direction: @direction;
+  animation-play-state: @play-state;
+  animation-fill-mode: @fill-mode;
+  
+  -webkit-animation-name: @name;
+  -webkit-animation-duration: @duration;
+  -webkit-animation-timing-function: @timing-function;
+  -webkit-animation-delay: @delay;
+  -webkit-animation-iteration-count: @iteration-count;
+  -webkit-animation-direction: @direction;
+  -webkit-animation-play-state: @play-state;
+  -webkit-animation-fill-mode: @fill-mode;
+}
+
+.fadeIn {
+  @keyframes fadeIn
+  {
+  0%   {opacity: 0}
+  100% {opacity: 1}
+  }
+  
+  @-webkit-keyframes fadeIn 
+  {
+  0%   {opacity: 0}
+  100% {opacity: 1}
+  }
+}
+
+.fadeOut {
+  @keyframes fadeOut
+  {
+  0%   {opacity: 1}
+  40% {opacity: 0.9}
+  100% {opacity: 0}
+  }
+  
+  @-webkit-keyframes fadeOut 
+  {
+  0%   {opacity: 1}
+  100% {opacity: 0}
+  }
+}
+
+.fadeInAndOut {
+  @keyframes fadeInAndOut
+  {
+  0%   {opacity: 0}
+  40% {opacity: 1}
+  60% {opacity: 1}
+  100% {opacity: 0}
+  }
+  
+  @-webkit-keyframes fadeInAndOut 
+  {
+  0%   {opacity: 0}
+  40% {opacity: 1}
+  60% {opacity: 1}
+  100% {opacity: 0}
+  }
+}
+
