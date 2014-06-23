@@ -262,14 +262,20 @@ html, body {
         img {
           display: inline-block;
           width: 100%;
+          border-radius: 8px;
+          //border: 5px solid #111;
+          -webkit-border-radius: 8px;
+          -webkit-transform: translateZ(0);
+          -webkit-mask-image: -webkit-radial-gradient(circle, white, black);
         }
       }
     }
   }
   .radius {
     .swiper-container {
-      border-radius: 10px;
-      -webkit-border-radius: 10px;
+      border-radius: 8px;
+      //border: 5px solid #111;
+      -webkit-border-radius: 8px;
       -webkit-transform: translateZ(0);
       -webkit-mask-image: -webkit-radial-gradient(circle, white, black);
     }
@@ -283,28 +289,28 @@ html, body {
   overflow: hidden;
   .cornor {
     position: absolute;
-    z-index: 100;
+    z-index: 1999;
     width: 8px;
     height: 8px;
     &.top-left {
-      left: 0px;
+      left: -1px;
       top: 0;
       background: url(../images/border_24x24.png) no-repeat left top;
     }
     &.top-right {
-      right: 0;
+      right: -1px;
       top: 0;
       background: url(../images/border_24x24.png) no-repeat left top;
       background-position: -16px top;
     }
     &.bottom-left {
-      left: 0px;
+      left: -1px;
       bottom: 0;
       background: url(../images/border_24x24.png) no-repeat left top;
       background-position: 0 -16px;
     }
     &.bottom-right {
-      right: 0;
+      right: -1px;
       bottom: 0;
       background: url(../images/border_24x24.png) no-repeat left top;
       background-position: -16px -16px;
