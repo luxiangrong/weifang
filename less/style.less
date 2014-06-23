@@ -278,6 +278,20 @@ html, body {
     -webkit-transform: translateZ(0);
     -webkit-mask-image: -webkit-radial-gradient(circle, white, black);
   }
+  &.part-banner {
+    .swiper-container {
+      border-radius: 0;
+      .swiper-wrapper {
+        .swiper-slide {
+          img {
+            display: inline-block;
+            width: 100%;
+            border-radius: 0;
+          }
+        }
+      }
+    }
+  }
 }
 
 

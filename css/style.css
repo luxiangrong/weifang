@@ -3437,6 +3437,14 @@ body {
   -webkit-transform: translateZ(0);
   -webkit-mask-image: -webkit-radial-gradient(circle, #ffffff, #000000);
 }
+.banner.part-banner .swiper-container {
+  border-radius: 0;
+}
+.banner.part-banner .swiper-container .swiper-wrapper .swiper-slide img {
+  display: inline-block;
+  width: 100%;
+  border-radius: 0;
+}
 .radius {
   position: relative;
   overflow: hidden;
