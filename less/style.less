@@ -132,25 +132,25 @@ html, body {
       .wrap {
          background-color: rgba(130,91,169, 0.88);
       }
-      .animation(fadeOut, 5s, linear, 0s, 1, normal, running, forwards);
+      .animation(fadeInAndOut, 5s, linear, 0s, 1, normal, running, forwards);
     }
     &.circle-label-2 {
        .wrap {
          background-color: rgba(109,165,64, 0.88);
       }
-      .animation(fadeInAndOut, 10s, linear, 2.5s, 1, normal, running, forwards);
+      .animation(fadeInAndOut, 5s, linear, 5.5s, 1, normal, running, forwards);
     }
     &.circle-label-3{
       .wrap {
          background-color: rgba(241,141,48, 0.88);
       }
-      .animation(fadeInAndOut, 10s, linear,10s, 1, normal, running, forwards);
+      .animation(fadeInAndOut, 5s, linear,10.5s, 1, normal, running, forwards);
     }
     &.circle-label-4{
       .wrap {
          background-color: rgba(89,132,210, 0.88);
       }
-      .animation(fadeIn, 5s, linear,17.5s, 1, normal, running, forwards);
+      .animation(fadeIn, 5s, linear,15.5s, 1, normal, running, forwards);
     }
   }
   p {
@@ -271,14 +271,12 @@ html, body {
       }
     }
   }
-  .radius {
-    .swiper-container {
-      border-radius: 8px;
-      //border: 5px solid #111;
-      -webkit-border-radius: 8px;
-      -webkit-transform: translateZ(0);
-      -webkit-mask-image: -webkit-radial-gradient(circle, white, black);
-    }
+  .swiper-container {
+    border-radius: 8px;
+    //border: 5px solid #111;
+    -webkit-border-radius: 8px;
+    -webkit-transform: translateZ(0);
+    -webkit-mask-image: -webkit-radial-gradient(circle, white, black);
   }
 }
 

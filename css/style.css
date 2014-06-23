@@ -2983,6 +2983,9 @@ Pagination Styles
   0% {
     opacity: 0;
   }
+  10% {
+    opacity: 1;
+  }
   100% {
     opacity: 1;
   }
@@ -2991,6 +2994,9 @@ Pagination Styles
   0% {
     opacity: 0;
   }
+  10% {
+    opacity: 1;
+  }
   100% {
     opacity: 1;
   }
@@ -2999,8 +3005,8 @@ Pagination Styles
   0% {
     opacity: 1;
   }
-  40% {
-    opacity: 0.9;
+  90% {
+    opacity: 1;
   }
   100% {
     opacity: 0;
@@ -3008,6 +3014,9 @@ Pagination Styles
 }
 @-webkit-keyframes fadeOut {
   0% {
+    opacity: 1;
+  }
+  90% {
     opacity: 1;
   }
   100% {
@@ -3018,10 +3027,10 @@ Pagination Styles
   0% {
     opacity: 0;
   }
-  40% {
+  10% {
     opacity: 1;
   }
-  60% {
+  90% {
     opacity: 1;
   }
   100% {
@@ -3032,10 +3041,10 @@ Pagination Styles
   0% {
     opacity: 0;
   }
-  40% {
+  10% {
     opacity: 1;
   }
-  60% {
+  90% {
     opacity: 1;
   }
   100% {
@@ -3046,10 +3055,10 @@ Pagination Styles
   0% {
     opacity: 0;
   }
-  40% {
+  10% {
     opacity: 1;
   }
-  60% {
+  90% {
     opacity: 1;
   }
   100% {
@@ -3060,10 +3069,10 @@ Pagination Styles
   0% {
     opacity: 0;
   }
-  40% {
+  10% {
     opacity: 1;
   }
-  60% {
+  90% {
     opacity: 1;
   }
   100% {
@@ -3074,8 +3083,8 @@ Pagination Styles
   0% {
     opacity: 1;
   }
-  40% {
-    opacity: 0.9;
+  90% {
+    opacity: 1;
   }
   100% {
     opacity: 0;
@@ -3083,6 +3092,9 @@ Pagination Styles
 }
 @-webkit-keyframes fadeOut {
   0% {
+    opacity: 1;
+  }
+  90% {
     opacity: 1;
   }
   100% {
@@ -3093,6 +3105,9 @@ Pagination Styles
   0% {
     opacity: 0;
   }
+  10% {
+    opacity: 1;
+  }
   100% {
     opacity: 1;
   }
@@ -3100,6 +3115,9 @@ Pagination Styles
 @-webkit-keyframes fadeIn {
   0% {
     opacity: 0;
+  }
+  10% {
+    opacity: 1;
   }
   100% {
     opacity: 1;
@@ -3227,7 +3245,7 @@ body {
   background-clip: content-box;
 }
 .welcome .circle-label.circle-label-1 {
-  animation-name: fadeOut;
+  animation-name: fadeInAndOut;
   animation-duration: 5s;
   animation-timing-function: linear;
   animation-delay: 0s;
@@ -3235,7 +3253,7 @@ body {
   animation-direction: normal;
   animation-play-state: running;
   animation-fill-mode: forwards;
-  -webkit-animation-name: fadeOut;
+  -webkit-animation-name: fadeInAndOut;
   -webkit-animation-duration: 5s;
   -webkit-animation-timing-function: linear;
   -webkit-animation-delay: 0s;
@@ -3249,17 +3267,17 @@ body {
 }
 .welcome .circle-label.circle-label-2 {
   animation-name: fadeInAndOut;
-  animation-duration: 10s;
+  animation-duration: 5s;
   animation-timing-function: linear;
-  animation-delay: 2.5s;
+  animation-delay: 5.5s;
   animation-iteration-count: 1;
   animation-direction: normal;
   animation-play-state: running;
   animation-fill-mode: forwards;
   -webkit-animation-name: fadeInAndOut;
-  -webkit-animation-duration: 10s;
+  -webkit-animation-duration: 5s;
   -webkit-animation-timing-function: linear;
-  -webkit-animation-delay: 2.5s;
+  -webkit-animation-delay: 5.5s;
   -webkit-animation-iteration-count: 1;
   -webkit-animation-direction: normal;
   -webkit-animation-play-state: running;
@@ -3270,17 +3288,17 @@ body {
 }
 .welcome .circle-label.circle-label-3 {
   animation-name: fadeInAndOut;
-  animation-duration: 10s;
+  animation-duration: 5s;
   animation-timing-function: linear;
-  animation-delay: 10s;
+  animation-delay: 10.5s;
   animation-iteration-count: 1;
   animation-direction: normal;
   animation-play-state: running;
   animation-fill-mode: forwards;
   -webkit-animation-name: fadeInAndOut;
-  -webkit-animation-duration: 10s;
+  -webkit-animation-duration: 5s;
   -webkit-animation-timing-function: linear;
-  -webkit-animation-delay: 10s;
+  -webkit-animation-delay: 10.5s;
   -webkit-animation-iteration-count: 1;
   -webkit-animation-direction: normal;
   -webkit-animation-play-state: running;
@@ -3293,7 +3311,7 @@ body {
   animation-name: fadeIn;
   animation-duration: 5s;
   animation-timing-function: linear;
-  animation-delay: 17.5s;
+  animation-delay: 15.5s;
   animation-iteration-count: 1;
   animation-direction: normal;
   animation-play-state: running;
@@ -3301,7 +3319,7 @@ body {
   -webkit-animation-name: fadeIn;
   -webkit-animation-duration: 5s;
   -webkit-animation-timing-function: linear;
-  -webkit-animation-delay: 17.5s;
+  -webkit-animation-delay: 15.5s;
   -webkit-animation-iteration-count: 1;
   -webkit-animation-direction: normal;
   -webkit-animation-play-state: running;
@@ -3413,7 +3431,7 @@ body {
   -webkit-transform: translateZ(0);
   -webkit-mask-image: -webkit-radial-gradient(circle, #ffffff, #000000);
 }
-.banner .radius .swiper-container {
+.banner .swiper-container {
   border-radius: 8px;
   -webkit-border-radius: 8px;
   -webkit-transform: translateZ(0);
