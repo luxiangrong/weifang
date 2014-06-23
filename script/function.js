@@ -4,11 +4,7 @@
 		$(document).ready(function() {
 			$(".welcome").on('click touchstart', function(e) {
 				e.preventDefault();
-				$this = $(this);
-				$this.addClass('slideUp');
-				$(".welcome").off('click touchend');
-
-				$("#main-page").show();
+				window.location.href="index.html"
 			});
 
 			var swiper = new Swiper('.swiper-container', {
@@ -17,10 +13,7 @@
 				grabCursor : true,
 				paginationClickable : true,
 				calculateHeight : true,
-				roundLengths : true,
-				onInit : function(swiper) {
-					$("#main-page").hide();
-				}
+				roundLengths : true
 			});
 
 		});
@@ -47,11 +40,11 @@
 				'position' : 'fixed',
 				'right' : '0',
 				'top' : '0',
-				'width' : '50%',
+				'width' : '100%',
 				'height' : '100%',
 				'z-index' : 2500
 			});
-			$("body").prepend(fullScreenHolder);
+			$(".content-wrap").prepend(fullScreenHolder);
 			settings.activeRect = [0, 0, 1, 1];
 			fullScreenHolder.touchwipe(settings);
 			
@@ -147,5 +140,6 @@
 		$("body").touchwipe(settings);
 		settings.activeRect = [0, 0, 1, 1];
 		$(".side-nav").touchwipe(settings);
+		$(".head-nav").touchwipe(settings);
 	});
 })(jQuery);
